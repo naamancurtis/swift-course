@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class TodoListViewController: UITableViewController {
     let defaults = UserDefaults.standard
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var itemArray = [Item]()
-    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loadItems()
@@ -47,8 +48,9 @@ class TodoListViewController: UITableViewController {
         let alert = UIAlertController(title: "Add new Todoey item", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             
-            let newItem = Item()
+            let newItem = Item(context: self.context)
             newItem.title = textField.text!
+            newItem.done = false
             self.itemArray.append(newItem)
             
             self.saveItems()
@@ -62,24 +64,20 @@ class TodoListViewController: UITableViewController {
     }
     
     func saveItems(){
-        let encoder = PropertyListEncoder()
         do {
-            let data = try encoder.encode(itemArray)
-            try data.write(to: dataFilePath!)
+            try self.context.save()
         } catch {
-            print("Error encoding item array, \(error)")
+            print("Error saving context, \(error)")
         }
         self.tableView.reloadData()
     }
     
     func loadItems() {
-        if let data = try? Data(contentsOf: dataFilePath!) {
-            let decoder = PropertyListDecoder()
-            do {
-                itemArray = try decoder.decode([Item].self, from: data)
-            } catch {
-                print("There was an error decoding: \(error)")
-            }
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        do {
+            itemArray = try context.fetch(request)
+        } catch {
+            print("Error fetching data from the context, \(error)")
         }
     }
 
