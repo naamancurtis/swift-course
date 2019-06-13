@@ -8,10 +8,11 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class CategoryViewController: SwipeTableViewController{
     let realm = try! Realm()
-    var catagories: Results<Category>?
+    var categories: Results<Category>?
 
     
     override func viewDidLoad() {
@@ -28,6 +29,7 @@ class CategoryViewController: SwipeTableViewController{
             
             let newCategory = Category()
             newCategory.name = textField.text!
+            newCategory.color = UIColor.randomFlat.hexValue()
             
             self.saveCategories(category: newCategory)
         }
@@ -42,14 +44,24 @@ class CategoryViewController: SwipeTableViewController{
     
     //MARK: - TableView Delegate Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return catagories?.count ?? 1
+        return categories?.count ?? 1
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
-        cell.textLabel?.text = catagories?[indexPath.row].name ?? "No Categories added yet"
-    
+        
+        if let category = categories?[indexPath.row] {
+            cell.textLabel?.text = category.name
+            guard let categoryColor = UIColor(hexString: category.color) else { fatalError() }
+            cell.backgroundColor = categoryColor
+            cell.textLabel?.textColor = UIColor(contrastingBlackOrWhiteColorOn: categoryColor, isFlat:true)
+        } else {
+            cell.textLabel?.text = "No Categories added yet"
+            cell.backgroundColor = UIColor.randomFlat
+            cell.textLabel?.textColor = UIColor(contrastingBlackOrWhiteColorOn: cell.backgroundColor!, isFlat:true)
+        }
+        
         return cell
     }
     
@@ -64,7 +76,7 @@ class CategoryViewController: SwipeTableViewController{
         let destinationVC = segue.destination as! TodoListViewController
         
         if let indexPath = tableView.indexPathForSelectedRow {
-            destinationVC.selectedCategory = catagories?[indexPath.row]
+            destinationVC.selectedCategory = categories?[indexPath.row]
         }
     }
     
@@ -83,13 +95,13 @@ class CategoryViewController: SwipeTableViewController{
     
     
     func loadCategories() {
-        catagories = realm.objects(Category.self)
+        categories = realm.objects(Category.self)
         tableView.reloadData()
     }
     
     
     override func updateModel(at indexPath: IndexPath) {
-        if let categoryForDeletion = self.catagories?[indexPath.row] {
+        if let categoryForDeletion = self.categories?[indexPath.row] {
             do {
                 try self.realm.write {
                     self.realm.delete(categoryForDeletion)
