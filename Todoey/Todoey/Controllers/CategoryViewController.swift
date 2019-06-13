@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class CategoryViewController: UITableViewController {
+class CategoryViewController: SwipeTableViewController{
     let realm = try! Realm()
     var catagories: Results<Category>?
 
@@ -19,7 +19,8 @@ class CategoryViewController: UITableViewController {
         loadCategories()
     }
 
-
+    
+    //MARK: - UI Interactions
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
         let alert = UIAlertController(title: "Add new todo category", message: "", preferredStyle: .alert)
@@ -39,16 +40,16 @@ class CategoryViewController: UITableViewController {
     }
    
     
+    //MARK: - TableView Delegate Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return catagories?.count ?? 1
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
-        
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         cell.textLabel?.text = catagories?[indexPath.row].name ?? "No Categories added yet"
-        
+    
         return cell
     }
     
@@ -58,6 +59,7 @@ class CategoryViewController: UITableViewController {
     }
     
     
+    //MARK: - Navigation Preparation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! TodoListViewController
         
@@ -67,6 +69,7 @@ class CategoryViewController: UITableViewController {
     }
     
     
+    //MARK: - Data Persistance
     func saveCategories(category: Category){
         do {
             try realm.write {
@@ -82,5 +85,18 @@ class CategoryViewController: UITableViewController {
     func loadCategories() {
         catagories = realm.objects(Category.self)
         tableView.reloadData()
+    }
+    
+    
+    override func updateModel(at indexPath: IndexPath) {
+        if let categoryForDeletion = self.catagories?[indexPath.row] {
+            do {
+                try self.realm.write {
+                    self.realm.delete(categoryForDeletion)
+                }
+            } catch {
+                print("An error was thrown: \(error)")
+            }
+        }
     }
 }
