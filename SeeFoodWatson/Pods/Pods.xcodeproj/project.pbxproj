@@ -1,0 +1,1135 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C1F3A5E0303041C6D8B79F053E4C90 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC262B6995139576606CA44EA95B9800 /* SVProgressHUD-dummy.m */; };
+		04FF238F49F6CC97AA86F35B613A3080 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58DEB6DC9721C3A5003CF0CFA7023C9 /* Shared.swift */; };
+		0B3117FB59C27FC3408B4351A78F1191 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6ED3E28CE73B6D3BC26916F79E7D1E /* RestKit.framework */; };
+		19293595A7A9DFA559BE041D68B69584 /* VisualRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564940B0C11C583A6339174E67086B1B /* VisualRecognition.swift */; };
+		1C8D6C40E6A074A22CB11A099F4CF758 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1689430437F81074DCCAD9BA6CB99641 /* Foundation.framework */; };
+		26C3DEAD8C7EACB67C99B267A0458FCD /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791D80A4A0D37207C64273902937DC1 /* CodableExtensions.swift */; };
+		29700A1148A8ED9C7A5261E4FB3ACB7F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD119DBED259FABEE8C0B00B41C01FE3 /* SVProgressHUD.bundle */; };
+		3323A67943CA0EEF7E8DEB48AB9927BE /* ErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC6E7918A98D67A98A46E8B6428947 /* ErrorInfo.swift */; };
+		3A4AD467EA56337BE63A9427749D387D /* FaceGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FF4F891F312D86FA2407B876B180B4 /* FaceGender.swift */; };
+		3FD03C99E97E6EF5B40A66F803574A5C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED4FB2E34DE6EA593C3B5605EA46ED /* Authentication.swift */; };
+		43AE0B542134DE217889E6E156BD76EF /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553113647705FFB2A565AA41B5627B2 /* RestError.swift */; };
+		473F7D6E5F85D3A88164DA9D38D523EF /* Classifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D21E89D5B300ADFEE40D239925C13 /* Classifiers.swift */; };
+		4CC1B6940285AD20BD7BEEE013174DFA /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1508335561FE24B162F133DD6E163333 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D44EB08BCD1EF0954A6A6A58670F0BB /* ClassResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8750587BE141411F8F633F1DA9D34E /* ClassResult.swift */; };
+		4E3A523C6C083FF2D75B59A6DE0B7A8D /* ImageWithFaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643527AF789684ED45ADF2DBCCFC9848 /* ImageWithFaces.swift */; };
+		568D617C4BC617DC4F83C6DE846270E7 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B830551CA3918F7850B8603D37BDFE /* MultipartFormData.swift */; };
+		58F2738EC91760FC72B5350114FD856B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399B3B2FE5AF139D100E15040ECC0498 /* QuartzCore.framework */; };
+		635F2D72FA6629B1BCB6B47824A53E53 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF17C646BCA8ABE6F3941A1DE1F11039 /* JSON.swift */; };
+		6A7991373096B3039F4CE3D38252605A /* IBMWatsonVisualRecognitionV3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C47B60AFF5018D71F1E56654EDA75125 /* IBMWatsonVisualRecognitionV3-dummy.m */; };
+		6CB9FFDF75B2CCEAF221A3CBEEDBFE4C /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6740DBCED38813E3B4E4F06867BCE7 /* SVIndefiniteAnimatedView.m */; };
+		6D312616878F5A76235757D2F24EC632 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975027FBAA7EDFB038C39ED90D1F50D0 /* Classifier.swift */; };
+		6DB8F08E206C5901D19DDCB24232C71E /* ClassifiedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847145EFF1BDEF6F3FE76441C2665F06 /* ClassifiedImages.swift */; };
+		6E77DEFA50D522AB689F6D9F7C8397AD /* IBMWatsonVisualRecognitionV3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 613CDDA89FBD4BDE272379E082F80171 /* IBMWatsonVisualRecognitionV3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E96837BFA27B8E20A83AC4452383F28 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B0CA7ABD39B5DC9D9E65E3CB8E92F /* Face.swift */; };
+		6EBCD87EA8BBD004C8A7EA1A00375124 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1689430437F81074DCCAD9BA6CB99641 /* Foundation.framework */; };
+		6FFA0BC4C1195406F7A7C61B70D77DDB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D191261C850F7E05A7DDEF380DE71E0 /* Class.swift */; };
+		713F612EBB92D25E6A3CC45576499AD5 /* ClassifiedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998C377088A9B4E3481653729844460 /* ClassifiedImage.swift */; };
+		72580D07CB0ECB071570F5EAD499C1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1689430437F81074DCCAD9BA6CB99641 /* Foundation.framework */; };
+		7528B5D6CAE11907B1261A5A9CD8EB63 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3DA233A63242C12A1A69F795A1E64E /* RestRequest.swift */; };
+		90D9C0FF1A1FFA8FE4A4C0AD2B6D250B /* IBMWatsonRestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0349B7038F200661BBFA311913D4806B /* IBMWatsonRestKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95CAC106A7910BF9BE701C9CB280924F /* FaceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914990157E17AB20F623663956C5A58 /* FaceLocation.swift */; };
+		9C8002630D603C397DC73B4B32BAED37 /* Pods-SeeFoodWatson-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A999FF8730B23DF7354AEF55E079CD1 /* Pods-SeeFoodWatson-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D58DB987C310D116DEB920162F67510 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CADA88341F107B23AD155417806BC2 /* SVProgressHUD.m */; };
+		9D67BF69ECF541EEBE3720ACCCDFDD7C /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F3F8CE3B40CC47C870FACBBD84FE2E /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A28471ECFD4964AD27D866001743FE00 /* RestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAFD040992AED757E90EF9165C9C86C /* RestUtilities.swift */; };
+		B2EB69909E3D3D35FC0CFE022B599126 /* FaceAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3016CA8481D7681559676293985E37 /* FaceAge.swift */; };
+		B62A8F328F5BECF4610A351F9F9A678A /* DetectedFaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5A6681D090D30B2109698AF61BF53 /* DetectedFaces.swift */; };
+		B6746027A21D602FA4CA42A153C906F6 /* FaceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3275A7232CE28C808EA0C143C70826A /* FaceIdentity.swift */; };
+		BFE749F077589FE809F3C77AF8BF5B29 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C2C2E5BA7443290688E4CCED9814E8 /* SVProgressAnimatedView.m */; };
+		C217C80CB2F2854697B4631EE0DB13B1 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A909C417EA0F1F89CE63633B6C0DF15D /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4C1AFED5A3F8FAEC2E0AEBC18946419 /* VisualRecognition+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510212E552F60933471561DC222F85F9 /* VisualRecognition+CoreML.swift */; };
+		D5D4E6DDEEB85256405249254D1BDA25 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D669039A70815E920ABD34CEA313DF26 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8ACE13B665EFFD75931B583586C4A21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1689430437F81074DCCAD9BA6CB99641 /* Foundation.framework */; };
+		DD01B80EBC8A1E6D6BE7F1CC3EE6B9A3 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0988685082F33C62998391C08A31A1 /* SVRadialGradientLayer.m */; };
+		DDBC5350EB14C1F39FD28B746D04474E /* PositiveExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985240498A2F80EF327560AD2ADC05B9 /* PositiveExample.swift */; };
+		DE5CDE3599031D9759E0483C940D6A11 /* VisualRecognition+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159DC951EEF42163EFC669A1F9DAB2B /* VisualRecognition+UIImage.swift */; };
+		E5623AE15CF8BAC4BA1FB57DA68EB606 /* IBMWatsonRestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9BCFC6C778774CADA1696959C6D7EC /* IBMWatsonRestKit-dummy.m */; };
+		EF2E845C1571BADE74671DFF26413ABE /* WarningInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0016BF0F31F31FF7E49B448384A6BF /* WarningInfo.swift */; };
+		F53755013CE88CA8C8703342707B98DC /* ClassifierResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282E1E64B725BE20DC4A1E7F31DCBE9 /* ClassifierResult.swift */; };
+		FB0B2311865A4F4CF5DDA43E3FE046C2 /* Pods-SeeFoodWatson-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B857E8A37B51799B24CE2EE0DF9C637F /* Pods-SeeFoodWatson-dummy.m */; };
+		FCAE394C46B23A18CDBD7A773CDEFF42 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FFB2162B40113E4F658A30F2FDB1AF /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E8DAA194DD49F78BD2ACFD90A8A82C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		A6FF687562A1725E76F1D357DBF9A890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		D97D6773FBF1FDABD228AE774D03353D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		FC622FC1049D1F682F92F6762DFB7BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08AE33DFB7C5DA716E481620909B5E6;
+			remoteInfo = IBMWatsonVisualRecognitionV3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0349B7038F200661BBFA311913D4806B /* IBMWatsonRestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonRestKit-umbrella.h"; sourceTree = "<group>"; };
+		07AC6E7918A98D67A98A46E8B6428947 /* ErrorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorInfo.swift; path = Source/VisualRecognitionV3/Models/ErrorInfo.swift; sourceTree = "<group>"; };
+		08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisualRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB5A6681D090D30B2109698AF61BF53 /* DetectedFaces.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectedFaces.swift; path = Source/VisualRecognitionV3/Models/DetectedFaces.swift; sourceTree = "<group>"; };
+		1159DC951EEF42163EFC669A1F9DAB2B /* VisualRecognition+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualRecognition+UIImage.swift"; path = "Source/VisualRecognitionV3/VisualRecognition+UIImage.swift"; sourceTree = "<group>"; };
+		1282E1E64B725BE20DC4A1E7F31DCBE9 /* ClassifierResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifierResult.swift; path = Source/VisualRecognitionV3/Models/ClassifierResult.swift; sourceTree = "<group>"; };
+		1508335561FE24B162F133DD6E163333 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		1689430437F81074DCCAD9BA6CB99641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1B9E966E5B2B9BFBA0205808FB35EA29 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		236D24026C1BEAB0BBE5EBD943E9F044 /* Pods-SeeFoodWatson-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SeeFoodWatson-acknowledgements.markdown"; sourceTree = "<group>"; };
+		245538D993453C48AA6DE894BE670D0B /* Pods_SeeFoodWatson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeeFoodWatson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		254B1A28630CABD11C42CAACD164BDC4 /* Pods-SeeFoodWatson-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SeeFoodWatson-acknowledgements.plist"; sourceTree = "<group>"; };
+		2998C377088A9B4E3481653729844460 /* ClassifiedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifiedImage.swift; path = Source/VisualRecognitionV3/Models/ClassifiedImage.swift; sourceTree = "<group>"; };
+		2A999FF8730B23DF7354AEF55E079CD1 /* Pods-SeeFoodWatson-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SeeFoodWatson-umbrella.h"; sourceTree = "<group>"; };
+		2E320E0867656381612A42DD7D528969 /* IBMWatsonVisualRecognitionV3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonVisualRecognitionV3-Info.plist"; sourceTree = "<group>"; };
+		32FFB2162B40113E4F658A30F2FDB1AF /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		386E605EE1E22D93FB00D29C3356C2AD /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		399B3B2FE5AF139D100E15040ECC0498 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3D8750587BE141411F8F633F1DA9D34E /* ClassResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassResult.swift; path = Source/VisualRecognitionV3/Models/ClassResult.swift; sourceTree = "<group>"; };
+		41CB988A3F5CB57DDFDDBB0187CB3E1E /* Pods-SeeFoodWatson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SeeFoodWatson.debug.xcconfig"; sourceTree = "<group>"; };
+		425A732DF09EFDF8B95083C37C0E2622 /* IBMWatsonRestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonRestKit.xcconfig; sourceTree = "<group>"; };
+		44F3F8CE3B40CC47C870FACBBD84FE2E /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		4B5CC1CBA09939D1938034494D0131AF /* IBMWatsonVisualRecognitionV3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonVisualRecognitionV3-prefix.pch"; sourceTree = "<group>"; };
+		510212E552F60933471561DC222F85F9 /* VisualRecognition+CoreML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualRecognition+CoreML.swift"; path = "Source/VisualRecognitionV3/VisualRecognition+CoreML.swift"; sourceTree = "<group>"; };
+		52ED4FB2E34DE6EA593C3B5605EA46ED /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/RestKit/Authentication.swift; sourceTree = "<group>"; };
+		564940B0C11C583A6339174E67086B1B /* VisualRecognition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisualRecognition.swift; path = Source/VisualRecognitionV3/VisualRecognition.swift; sourceTree = "<group>"; };
+		5C6FDC44E8195EE93129124B1758D4D6 /* IBMWatsonRestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonRestKit-prefix.pch"; sourceTree = "<group>"; };
+		613CDDA89FBD4BDE272379E082F80171 /* IBMWatsonVisualRecognitionV3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonVisualRecognitionV3-umbrella.h"; sourceTree = "<group>"; };
+		6299AA45FF1AE1D32EA92991CA01DFE2 /* IBMWatsonRestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonRestKit.modulemap; sourceTree = "<group>"; };
+		643527AF789684ED45ADF2DBCCFC9848 /* ImageWithFaces.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageWithFaces.swift; path = Source/VisualRecognitionV3/Models/ImageWithFaces.swift; sourceTree = "<group>"; };
+		68FF4F891F312D86FA2407B876B180B4 /* FaceGender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceGender.swift; path = Source/VisualRecognitionV3/Models/FaceGender.swift; sourceTree = "<group>"; };
+		6D0016BF0F31F31FF7E49B448384A6BF /* WarningInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarningInfo.swift; path = Source/VisualRecognitionV3/Models/WarningInfo.swift; sourceTree = "<group>"; };
+		6D191261C850F7E05A7DDEF380DE71E0 /* Class.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Class.swift; path = Source/VisualRecognitionV3/Models/Class.swift; sourceTree = "<group>"; };
+		757C2F41BAF64FA08CF85206980EE5B5 /* IBMWatsonVisualRecognitionV3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonVisualRecognitionV3.xcconfig; sourceTree = "<group>"; };
+		825B0CA7ABD39B5DC9D9E65E3CB8E92F /* Face.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Face.swift; path = Source/VisualRecognitionV3/Models/Face.swift; sourceTree = "<group>"; };
+		847145EFF1BDEF6F3FE76441C2665F06 /* ClassifiedImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifiedImages.swift; path = Source/VisualRecognitionV3/Models/ClassifiedImages.swift; sourceTree = "<group>"; };
+		85C2C2E5BA7443290688E4CCED9814E8 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		8D0FC729924F32467B590F53E9FF7C58 /* Pods-SeeFoodWatson-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SeeFoodWatson-frameworks.sh"; sourceTree = "<group>"; };
+		95B830551CA3918F7850B8603D37BDFE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/RestKit/MultipartFormData.swift; sourceTree = "<group>"; };
+		975027FBAA7EDFB038C39ED90D1F50D0 /* Classifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Classifier.swift; path = Source/VisualRecognitionV3/Models/Classifier.swift; sourceTree = "<group>"; };
+		985240498A2F80EF327560AD2ADC05B9 /* PositiveExample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositiveExample.swift; path = Source/VisualRecognitionV3/Models/PositiveExample.swift; sourceTree = "<group>"; };
+		9B3016CA8481D7681559676293985E37 /* FaceAge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceAge.swift; path = Source/VisualRecognitionV3/Models/FaceAge.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A909C417EA0F1F89CE63633B6C0DF15D /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		AB0988685082F33C62998391C08A31A1 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		AC262B6995139576606CA44EA95B9800 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		AD93C411207FE2402915699B920FB090 /* Pods-SeeFoodWatson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SeeFoodWatson.release.xcconfig"; sourceTree = "<group>"; };
+		B79240122B9044C232282C412342BA7E /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B857E8A37B51799B24CE2EE0DF9C637F /* Pods-SeeFoodWatson-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SeeFoodWatson-dummy.m"; sourceTree = "<group>"; };
+		C077683FBBB6E8A5517AF14CEE05B1F0 /* Pods-SeeFoodWatson-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SeeFoodWatson-Info.plist"; sourceTree = "<group>"; };
+		C47B60AFF5018D71F1E56654EDA75125 /* IBMWatsonVisualRecognitionV3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonVisualRecognitionV3-dummy.m"; sourceTree = "<group>"; };
+		C553113647705FFB2A565AA41B5627B2 /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/RestKit/RestError.swift; sourceTree = "<group>"; };
+		C8F1A999C85EFE4C62BDB1CD395244D6 /* IBMWatsonRestKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonRestKit-Info.plist"; sourceTree = "<group>"; };
+		CA6ED3E28CE73B6D3BC26916F79E7D1E /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFD040992AED757E90EF9165C9C86C /* RestUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestUtilities.swift; path = Sources/RestKit/RestUtilities.swift; sourceTree = "<group>"; };
+		CD2D21E89D5B300ADFEE40D239925C13 /* Classifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Classifiers.swift; path = Source/VisualRecognitionV3/Models/Classifiers.swift; sourceTree = "<group>"; };
+		D3275A7232CE28C808EA0C143C70826A /* FaceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceIdentity.swift; path = Source/VisualRecognitionV3/Models/FaceIdentity.swift; sourceTree = "<group>"; };
+		D58DEB6DC9721C3A5003CF0CFA7023C9 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		D669039A70815E920ABD34CEA313DF26 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		D7CADA88341F107B23AD155417806BC2 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		D914990157E17AB20F623663956C5A58 /* FaceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceLocation.swift; path = Source/VisualRecognitionV3/Models/FaceLocation.swift; sourceTree = "<group>"; };
+		DD6740DBCED38813E3B4E4F06867BCE7 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		E367C3D4F6AF1D8752EDBA6856425B2D /* Pods-SeeFoodWatson.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SeeFoodWatson.modulemap"; sourceTree = "<group>"; };
+		E3AF3B7B82B1109EE17B97D9889E0F27 /* IBMWatsonVisualRecognitionV3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonVisualRecognitionV3.modulemap; sourceTree = "<group>"; };
+		E791D80A4A0D37207C64273902937DC1 /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/RestKit/CodableExtensions.swift; sourceTree = "<group>"; };
+		E85FDEE455F1EAFBA899708F33246F53 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9BCFC6C778774CADA1696959C6D7EC /* IBMWatsonRestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonRestKit-dummy.m"; sourceTree = "<group>"; };
+		EF17C646BCA8ABE6F3941A1DE1F11039 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/RestKit/JSON.swift; sourceTree = "<group>"; };
+		FB3DA233A63242C12A1A69F795A1E64E /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/RestKit/RestRequest.swift; sourceTree = "<group>"; };
+		FC406D9D42EBF1FD088A2FE8AEFE30AB /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		FD119DBED259FABEE8C0B00B41C01FE3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67270912DFE1CC459B1CA61704A25F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72580D07CB0ECB071570F5EAD499C1B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61BD44FF2A99E0433902B0FA81B87A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8ACE13B665EFFD75931B583586C4A21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E201A253162BEF401324252D61C74D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8D6C40E6A074A22CB11A099F4CF758 /* Foundation.framework in Frameworks */,
+				58F2738EC91760FC72B5350114FD856B /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F833DEFEA19F6E95D6E3F4999F813870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBCD87EA8BBD004C8A7EA1A00375124 /* Foundation.framework in Frameworks */,
+				0B3117FB59C27FC3408B4351A78F1191 /* RestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13A3C77A946336F16C14FBDB95774492 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD119DBED259FABEE8C0B00B41C01FE3 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1ADC6F03C83113BA2BE9A4CDD95B0443 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC406D9D42EBF1FD088A2FE8AEFE30AB /* SVProgressHUD.modulemap */,
+				1B9E966E5B2B9BFBA0205808FB35EA29 /* SVProgressHUD.xcconfig */,
+				AC262B6995139576606CA44EA95B9800 /* SVProgressHUD-dummy.m */,
+				E85FDEE455F1EAFBA899708F33246F53 /* SVProgressHUD-Info.plist */,
+				386E605EE1E22D93FB00D29C3356C2AD /* SVProgressHUD-prefix.pch */,
+				A909C417EA0F1F89CE63633B6C0DF15D /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		52F5BD610150FE48ECDEE8761FA845FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78421FEB3D7940D458D09D6257D71CE0 /* IBMWatsonRestKit */,
+				94D8C948D125ABEA6DB8178E427EB684 /* IBMWatsonVisualRecognitionV3 */,
+				5B8956602671005030DF29FD46A2024E /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5ACC2BC7642ABFE2CCDE03714BB89E6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6299AA45FF1AE1D32EA92991CA01DFE2 /* IBMWatsonRestKit.modulemap */,
+				425A732DF09EFDF8B95083C37C0E2622 /* IBMWatsonRestKit.xcconfig */,
+				EB9BCFC6C778774CADA1696959C6D7EC /* IBMWatsonRestKit-dummy.m */,
+				C8F1A999C85EFE4C62BDB1CD395244D6 /* IBMWatsonRestKit-Info.plist */,
+				5C6FDC44E8195EE93129124B1758D4D6 /* IBMWatsonRestKit-prefix.pch */,
+				0349B7038F200661BBFA311913D4806B /* IBMWatsonRestKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonRestKit";
+			sourceTree = "<group>";
+		};
+		5B8956602671005030DF29FD46A2024E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1508335561FE24B162F133DD6E163333 /* SVIndefiniteAnimatedView.h */,
+				DD6740DBCED38813E3B4E4F06867BCE7 /* SVIndefiniteAnimatedView.m */,
+				D669039A70815E920ABD34CEA313DF26 /* SVProgressAnimatedView.h */,
+				85C2C2E5BA7443290688E4CCED9814E8 /* SVProgressAnimatedView.m */,
+				44F3F8CE3B40CC47C870FACBBD84FE2E /* SVProgressHUD.h */,
+				D7CADA88341F107B23AD155417806BC2 /* SVProgressHUD.m */,
+				32FFB2162B40113E4F658A30F2FDB1AF /* SVRadialGradientLayer.h */,
+				AB0988685082F33C62998391C08A31A1 /* SVRadialGradientLayer.m */,
+				13A3C77A946336F16C14FBDB95774492 /* Resources */,
+				1ADC6F03C83113BA2BE9A4CDD95B0443 /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		61D24C398E0F4D3234BBDF10CD0DF204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6ED3E28CE73B6D3BC26916F79E7D1E /* RestKit.framework */,
+				97EC6DEAE17B302E1B3CB95AC56A0750 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78421FEB3D7940D458D09D6257D71CE0 /* IBMWatsonRestKit */ = {
+			isa = PBXGroup;
+			children = (
+				52ED4FB2E34DE6EA593C3B5605EA46ED /* Authentication.swift */,
+				E791D80A4A0D37207C64273902937DC1 /* CodableExtensions.swift */,
+				EF17C646BCA8ABE6F3941A1DE1F11039 /* JSON.swift */,
+				95B830551CA3918F7850B8603D37BDFE /* MultipartFormData.swift */,
+				C553113647705FFB2A565AA41B5627B2 /* RestError.swift */,
+				FB3DA233A63242C12A1A69F795A1E64E /* RestRequest.swift */,
+				CBAFD040992AED757E90EF9165C9C86C /* RestUtilities.swift */,
+				5ACC2BC7642ABFE2CCDE03714BB89E6B /* Support Files */,
+			);
+			path = IBMWatsonRestKit;
+			sourceTree = "<group>";
+		};
+		94D8C948D125ABEA6DB8178E427EB684 /* IBMWatsonVisualRecognitionV3 */ = {
+			isa = PBXGroup;
+			children = (
+				6D191261C850F7E05A7DDEF380DE71E0 /* Class.swift */,
+				2998C377088A9B4E3481653729844460 /* ClassifiedImage.swift */,
+				847145EFF1BDEF6F3FE76441C2665F06 /* ClassifiedImages.swift */,
+				975027FBAA7EDFB038C39ED90D1F50D0 /* Classifier.swift */,
+				1282E1E64B725BE20DC4A1E7F31DCBE9 /* ClassifierResult.swift */,
+				CD2D21E89D5B300ADFEE40D239925C13 /* Classifiers.swift */,
+				3D8750587BE141411F8F633F1DA9D34E /* ClassResult.swift */,
+				0CB5A6681D090D30B2109698AF61BF53 /* DetectedFaces.swift */,
+				07AC6E7918A98D67A98A46E8B6428947 /* ErrorInfo.swift */,
+				825B0CA7ABD39B5DC9D9E65E3CB8E92F /* Face.swift */,
+				9B3016CA8481D7681559676293985E37 /* FaceAge.swift */,
+				68FF4F891F312D86FA2407B876B180B4 /* FaceGender.swift */,
+				D3275A7232CE28C808EA0C143C70826A /* FaceIdentity.swift */,
+				D914990157E17AB20F623663956C5A58 /* FaceLocation.swift */,
+				643527AF789684ED45ADF2DBCCFC9848 /* ImageWithFaces.swift */,
+				985240498A2F80EF327560AD2ADC05B9 /* PositiveExample.swift */,
+				D58DEB6DC9721C3A5003CF0CFA7023C9 /* Shared.swift */,
+				564940B0C11C583A6339174E67086B1B /* VisualRecognition.swift */,
+				510212E552F60933471561DC222F85F9 /* VisualRecognition+CoreML.swift */,
+				1159DC951EEF42163EFC669A1F9DAB2B /* VisualRecognition+UIImage.swift */,
+				6D0016BF0F31F31FF7E49B448384A6BF /* WarningInfo.swift */,
+				9790DEB41F7E4ACB583DA56C1B83D128 /* Support Files */,
+			);
+			path = IBMWatsonVisualRecognitionV3;
+			sourceTree = "<group>";
+		};
+		9790DEB41F7E4ACB583DA56C1B83D128 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3AF3B7B82B1109EE17B97D9889E0F27 /* IBMWatsonVisualRecognitionV3.modulemap */,
+				757C2F41BAF64FA08CF85206980EE5B5 /* IBMWatsonVisualRecognitionV3.xcconfig */,
+				C47B60AFF5018D71F1E56654EDA75125 /* IBMWatsonVisualRecognitionV3-dummy.m */,
+				2E320E0867656381612A42DD7D528969 /* IBMWatsonVisualRecognitionV3-Info.plist */,
+				4B5CC1CBA09939D1938034494D0131AF /* IBMWatsonVisualRecognitionV3-prefix.pch */,
+				613CDDA89FBD4BDE272379E082F80171 /* IBMWatsonVisualRecognitionV3-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonVisualRecognitionV3";
+			sourceTree = "<group>";
+		};
+		97EC6DEAE17B302E1B3CB95AC56A0750 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1689430437F81074DCCAD9BA6CB99641 /* Foundation.framework */,
+				399B3B2FE5AF139D100E15040ECC0498 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9879D4FBA5A91B804E5FCA9162BAF244 /* Pods-SeeFoodWatson */ = {
+			isa = PBXGroup;
+			children = (
+				E367C3D4F6AF1D8752EDBA6856425B2D /* Pods-SeeFoodWatson.modulemap */,
+				236D24026C1BEAB0BBE5EBD943E9F044 /* Pods-SeeFoodWatson-acknowledgements.markdown */,
+				254B1A28630CABD11C42CAACD164BDC4 /* Pods-SeeFoodWatson-acknowledgements.plist */,
+				B857E8A37B51799B24CE2EE0DF9C637F /* Pods-SeeFoodWatson-dummy.m */,
+				8D0FC729924F32467B590F53E9FF7C58 /* Pods-SeeFoodWatson-frameworks.sh */,
+				C077683FBBB6E8A5517AF14CEE05B1F0 /* Pods-SeeFoodWatson-Info.plist */,
+				2A999FF8730B23DF7354AEF55E079CD1 /* Pods-SeeFoodWatson-umbrella.h */,
+				41CB988A3F5CB57DDFDDBB0187CB3E1E /* Pods-SeeFoodWatson.debug.xcconfig */,
+				AD93C411207FE2402915699B920FB090 /* Pods-SeeFoodWatson.release.xcconfig */,
+			);
+			name = "Pods-SeeFoodWatson";
+			path = "Target Support Files/Pods-SeeFoodWatson";
+			sourceTree = "<group>";
+		};
+		B740DC06B2DDF5E8A0CF1326E1FEEE61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				245538D993453C48AA6DE894BE670D0B /* Pods_SeeFoodWatson.framework */,
+				B79240122B9044C232282C412342BA7E /* RestKit.framework */,
+				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
+				08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBF87B74B20E5EEB2DCB744950144555 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9879D4FBA5A91B804E5FCA9162BAF244 /* Pods-SeeFoodWatson */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				61D24C398E0F4D3234BBDF10CD0DF204 /* Frameworks */,
+				52F5BD610150FE48ECDEE8761FA845FA /* Pods */,
+				B740DC06B2DDF5E8A0CF1326E1FEEE61 /* Products */,
+				CBF87B74B20E5EEB2DCB744950144555 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D11F976C956669B8E8392A09535D5D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8002630D603C397DC73B4B32BAED37 /* Pods-SeeFoodWatson-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C83CDB0524B58BDB5BAEED85C586EF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E77DEFA50D522AB689F6D9F7C8397AD /* IBMWatsonVisualRecognitionV3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B01768379CA733E1A9B6DA0375F41A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC1B6940285AD20BD7BEEE013174DFA /* SVIndefiniteAnimatedView.h in Headers */,
+				D5D4E6DDEEB85256405249254D1BDA25 /* SVProgressAnimatedView.h in Headers */,
+				C217C80CB2F2854697B4631EE0DB13B1 /* SVProgressHUD-umbrella.h in Headers */,
+				9D67BF69ECF541EEBE3720ACCCDFDD7C /* SVProgressHUD.h in Headers */,
+				FCAE394C46B23A18CDBD7A773CDEFF42 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E081E256D9DD494CE1352F8FF948E7E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D9C0FF1A1FFA8FE4A4C0AD2B6D250B /* IBMWatsonRestKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A55CB2200A69083BEC59FA288A4E15 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				9B01768379CA733E1A9B6DA0375F41A0 /* Headers */,
+				BB7546902A688EB4662B7D745D9DD280 /* Sources */,
+				E201A253162BEF401324252D61C74D6A /* Frameworks */,
+				553177EDF1A947DBB0E35CEEAA8F0E1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3461332DCCC4D952FBAD32605128769F /* Pods-SeeFoodWatson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6BB5AF55848BB4AE1215DCFC9A735F /* Build configuration list for PBXNativeTarget "Pods-SeeFoodWatson" */;
+			buildPhases = (
+				1D11F976C956669B8E8392A09535D5D6 /* Headers */,
+				19B5BF93DCF4853F28CA34B390790512 /* Sources */,
+				67270912DFE1CC459B1CA61704A25F78 /* Frameworks */,
+				C197A0D39EBCE8DBB4577B009E17032F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4826614E6CAF0C8020B46BB62E608520 /* PBXTargetDependency */,
+				18BB24CEEA157CC1BD40309EA9C50293 /* PBXTargetDependency */,
+				062F2BB108C59A9C11E0314357DFC307 /* PBXTargetDependency */,
+			);
+			name = "Pods-SeeFoodWatson";
+			productName = "Pods-SeeFoodWatson";
+			productReference = 245538D993453C48AA6DE894BE670D0B /* Pods_SeeFoodWatson.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31BE9C19A60B5C32C544C9208DE215A /* Build configuration list for PBXNativeTarget "IBMWatsonRestKit" */;
+			buildPhases = (
+				E081E256D9DD494CE1352F8FF948E7E0 /* Headers */,
+				B20E0A2FE0954C408AB52B45B167B41F /* Sources */,
+				C61BD44FF2A99E0433902B0FA81B87A9 /* Frameworks */,
+				0C3388FAC8376B8B251E4DAE368A384B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMWatsonRestKit;
+			productName = IBMWatsonRestKit;
+			productReference = B79240122B9044C232282C412342BA7E /* RestKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3C4A8852D42BDC252CA3A417A2FBB5 /* Build configuration list for PBXNativeTarget "IBMWatsonVisualRecognitionV3" */;
+			buildPhases = (
+				8C83CDB0524B58BDB5BAEED85C586EF6 /* Headers */,
+				F20C1035C9BB22725414925E6FC4D4D6 /* Sources */,
+				F833DEFEA19F6E95D6E3F4999F813870 /* Frameworks */,
+				87CB3E1C9D184FD0D7C52B4F774C4292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9953B927820334B9EB3B409EC8F08E /* PBXTargetDependency */,
+			);
+			name = IBMWatsonVisualRecognitionV3;
+			productName = IBMWatsonVisualRecognitionV3;
+			productReference = 08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					A0D0D9F7CF611B6D221589722C5CBBDE = {
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B740DC06B2DDF5E8A0CF1326E1FEEE61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */,
+				B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */,
+				3461332DCCC4D952FBAD32605128769F /* Pods-SeeFoodWatson */,
+				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C3388FAC8376B8B251E4DAE368A384B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553177EDF1A947DBB0E35CEEAA8F0E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29700A1148A8ED9C7A5261E4FB3ACB7F /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87CB3E1C9D184FD0D7C52B4F774C4292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C197A0D39EBCE8DBB4577B009E17032F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B5BF93DCF4853F28CA34B390790512 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0B2311865A4F4CF5DDA43E3FE046C2 /* Pods-SeeFoodWatson-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20E0A2FE0954C408AB52B45B167B41F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD03C99E97E6EF5B40A66F803574A5C /* Authentication.swift in Sources */,
+				26C3DEAD8C7EACB67C99B267A0458FCD /* CodableExtensions.swift in Sources */,
+				E5623AE15CF8BAC4BA1FB57DA68EB606 /* IBMWatsonRestKit-dummy.m in Sources */,
+				635F2D72FA6629B1BCB6B47824A53E53 /* JSON.swift in Sources */,
+				568D617C4BC617DC4F83C6DE846270E7 /* MultipartFormData.swift in Sources */,
+				43AE0B542134DE217889E6E156BD76EF /* RestError.swift in Sources */,
+				7528B5D6CAE11907B1261A5A9CD8EB63 /* RestRequest.swift in Sources */,
+				A28471ECFD4964AD27D866001743FE00 /* RestUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7546902A688EB4662B7D745D9DD280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB9FFDF75B2CCEAF221A3CBEEDBFE4C /* SVIndefiniteAnimatedView.m in Sources */,
+				BFE749F077589FE809F3C77AF8BF5B29 /* SVProgressAnimatedView.m in Sources */,
+				02C1F3A5E0303041C6D8B79F053E4C90 /* SVProgressHUD-dummy.m in Sources */,
+				9D58DB987C310D116DEB920162F67510 /* SVProgressHUD.m in Sources */,
+				DD01B80EBC8A1E6D6BE7F1CC3EE6B9A3 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20C1035C9BB22725414925E6FC4D4D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFA0BC4C1195406F7A7C61B70D77DDB /* Class.swift in Sources */,
+				713F612EBB92D25E6A3CC45576499AD5 /* ClassifiedImage.swift in Sources */,
+				6DB8F08E206C5901D19DDCB24232C71E /* ClassifiedImages.swift in Sources */,
+				6D312616878F5A76235757D2F24EC632 /* Classifier.swift in Sources */,
+				F53755013CE88CA8C8703342707B98DC /* ClassifierResult.swift in Sources */,
+				473F7D6E5F85D3A88164DA9D38D523EF /* Classifiers.swift in Sources */,
+				4D44EB08BCD1EF0954A6A6A58670F0BB /* ClassResult.swift in Sources */,
+				B62A8F328F5BECF4610A351F9F9A678A /* DetectedFaces.swift in Sources */,
+				3323A67943CA0EEF7E8DEB48AB9927BE /* ErrorInfo.swift in Sources */,
+				6E96837BFA27B8E20A83AC4452383F28 /* Face.swift in Sources */,
+				B2EB69909E3D3D35FC0CFE022B599126 /* FaceAge.swift in Sources */,
+				3A4AD467EA56337BE63A9427749D387D /* FaceGender.swift in Sources */,
+				B6746027A21D602FA4CA42A153C906F6 /* FaceIdentity.swift in Sources */,
+				95CAC106A7910BF9BE701C9CB280924F /* FaceLocation.swift in Sources */,
+				6A7991373096B3039F4CE3D38252605A /* IBMWatsonVisualRecognitionV3-dummy.m in Sources */,
+				4E3A523C6C083FF2D75B59A6DE0B7A8D /* ImageWithFaces.swift in Sources */,
+				DDBC5350EB14C1F39FD28B746D04474E /* PositiveExample.swift in Sources */,
+				04FF238F49F6CC97AA86F35B613A3080 /* Shared.swift in Sources */,
+				D4C1AFED5A3F8FAEC2E0AEBC18946419 /* VisualRecognition+CoreML.swift in Sources */,
+				DE5CDE3599031D9759E0483C940D6A11 /* VisualRecognition+UIImage.swift in Sources */,
+				19293595A7A9DFA559BE041D68B69584 /* VisualRecognition.swift in Sources */,
+				EF2E845C1571BADE74671DFF26413ABE /* WarningInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		062F2BB108C59A9C11E0314357DFC307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = 7E8DAA194DD49F78BD2ACFD90A8A82C9 /* PBXContainerItemProxy */;
+		};
+		18BB24CEEA157CC1BD40309EA9C50293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonVisualRecognitionV3;
+			target = B08AE33DFB7C5DA716E481620909B5E6 /* IBMWatsonVisualRecognitionV3 */;
+			targetProxy = FC622FC1049D1F682F92F6762DFB7BB2 /* PBXContainerItemProxy */;
+		};
+		4826614E6CAF0C8020B46BB62E608520 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = A6FF687562A1725E76F1D357DBF9A890 /* PBXContainerItemProxy */;
+		};
+		AE9953B927820334B9EB3B409EC8F08E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = D97D6773FBF1FDABD228AE774D03353D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E0164F7A5A13A00635A0D1519CA344C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9E966E5B2B9BFBA0205808FB35EA29 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53BC69D2899DAC7EF4C4801D7BE287DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD93C411207FE2402915699B920FB090 /* Pods-SeeFoodWatson.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SeeFoodWatson/Pods-SeeFoodWatson-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SeeFoodWatson/Pods-SeeFoodWatson.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59ACD4A1A27632D328AC9E3ECCD59FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 757C2F41BAF64FA08CF85206980EE5B5 /* IBMWatsonVisualRecognitionV3.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3.modulemap";
+				PRODUCT_MODULE_NAME = VisualRecognition;
+				PRODUCT_NAME = VisualRecognition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E90FACAAB7B50EEA0757B439B2F893B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425A732DF09EFDF8B95083C37C0E2622 /* IBMWatsonRestKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit.modulemap";
+				PRODUCT_MODULE_NAME = RestKit;
+				PRODUCT_NAME = RestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6757E778190198B6BCEEE2397AD0A3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425A732DF09EFDF8B95083C37C0E2622 /* IBMWatsonRestKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit.modulemap";
+				PRODUCT_MODULE_NAME = RestKit;
+				PRODUCT_NAME = RestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B25742741CD552792DD07779F8917B15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9E966E5B2B9BFBA0205808FB35EA29 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB994CCF315786938A4928849017013D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CB988A3F5CB57DDFDDBB0187CB3E1E /* Pods-SeeFoodWatson.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SeeFoodWatson/Pods-SeeFoodWatson-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SeeFoodWatson/Pods-SeeFoodWatson.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC5C8255D721E3AC1797BB55B5434211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 757C2F41BAF64FA08CF85206980EE5B5 /* IBMWatsonVisualRecognitionV3.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonVisualRecognitionV3/IBMWatsonVisualRecognitionV3.modulemap";
+				PRODUCT_MODULE_NAME = VisualRecognition;
+				PRODUCT_NAME = VisualRecognition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E6BB5AF55848BB4AE1215DCFC9A735F /* Build configuration list for PBXNativeTarget "Pods-SeeFoodWatson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB994CCF315786938A4928849017013D /* Debug */,
+				53BC69D2899DAC7EF4C4801D7BE287DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A55CB2200A69083BEC59FA288A4E15 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0164F7A5A13A00635A0D1519CA344C /* Debug */,
+				B25742741CD552792DD07779F8917B15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31BE9C19A60B5C32C544C9208DE215A /* Build configuration list for PBXNativeTarget "IBMWatsonRestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E90FACAAB7B50EEA0757B439B2F893B /* Debug */,
+				6757E778190198B6BCEEE2397AD0A3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3C4A8852D42BDC252CA3A417A2FBB5 /* Build configuration list for PBXNativeTarget "IBMWatsonVisualRecognitionV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5C8255D721E3AC1797BB55B5434211 /* Debug */,
+				59ACD4A1A27632D328AC9E3ECCD59FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
